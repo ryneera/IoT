@@ -3,12 +3,15 @@
 <body>
 
 Name: <input type="text" name="name" value="<?php echo $name;?>">
-<br>
+<br><br>
 E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-<br>
-Website: <input type="text" name="website" value="<?php echo $website;?>">
-
-
+<br><br>
+Age: <input type="text" name="age" value="<?php echo $age;?>">
+<br><br>
+Phone: <input type="text" name="phone" value="<?php echo $phone;?>">
+<br><br>
+Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+<br><br>
 
 Gender:
 <input type="radio" name="gender"
@@ -26,9 +29,13 @@ echo $name;
 echo "<br>";
 echo $email;
 echo "<br>";
-echo $website;
+echo $age;
+echo "<br>";
+echo $phone;
 echo "<br>";
 echo $gender;
+echo "<br>";
+echo $comment;
 ?>
 
 </body>
