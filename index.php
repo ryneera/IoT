@@ -20,7 +20,7 @@ value="female">Female
 <input type="radio" name="gender"
 <?php if (isset($gender) && $gender=="male") echo "checked";?>
 value="male">Male
-
+ 
 <?php
 echo $name;
 echo "<br>";
