@@ -8,7 +8,7 @@ E-mail: <input type="text" name="email" value="<?php echo $email;?>">
 
 Website: <input type="text" name="website" value="<?php echo $website;?>">
 
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea> 
+
 
 Gender:
 <input type="radio" name="gender"
@@ -28,8 +28,6 @@ echo "<br>";
 echo $email;
 echo "<br>";
 echo $website;
-echo "<br>";
-echo $comment;
 echo "<br>";
 echo $gender;
 ?>
