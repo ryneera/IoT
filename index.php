@@ -2,13 +2,13 @@
 <html>
 <body>
 
-Name: <input type="text" name="name" value="<?php echo $name;?>"\n>
+Name: <input type="text" name="name" value="<?php echo $name;?>">
 
-E-mail: <input type="text" name="email" value="<?php echo $email;?>"\n>
+E-mail: <input type="text" name="email" value="<?php echo $email;?>">
 
-Website: <input type="text" name="website" value="<?php echo $website;?>"\n>
+Website: <input type="text" name="website" value="<?php echo $website;?>">
 
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?>\n</textarea> 
+Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea> 
 
 Gender:
 <input type="radio" name="gender"
@@ -20,6 +20,19 @@ value="male">Male
 <input type="radio" name="gender"
 <?php if (isset($gender) && $gender=="other") echo "checked";?>
 value="other">Other 
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
 
 </body>
 </html>
