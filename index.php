@@ -3,9 +3,9 @@
 <body>
 
 Name: <input type="text" name="name" value="<?php echo $name;?>">
-
+<br>
 E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-
+<br>
 Website: <input type="text" name="website" value="<?php echo $website;?>">
 
 
@@ -22,7 +22,6 @@ value="male">Male
 value="other">Other 
 
 <?php
-echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
 echo $email;
