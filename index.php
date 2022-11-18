@@ -23,8 +23,10 @@ value="male">Male
 <br><br>
 <input type="submit" name="submit" value="Submit">  
 
+
 <?php
-echo $name;
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $name);
 echo "<br>";
 echo $email;
 echo "<br>";
