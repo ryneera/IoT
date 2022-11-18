@@ -29,13 +29,15 @@ value="male">Male
     button();
 }
 function button(){
+    echo "yopp";
+    /*
     $path = "C:/Users/laura/Desktop/tuke/file.txt"; 
     $myfile = fopen($path, "w");
     fwrite($myfile, "oki");
-    fclose($myfile);
+    fclose($myfile);*/
 
 }
-
+/*
 echo "Hello. :)";
 echo "<br>";
 echo $email;
@@ -46,10 +48,10 @@ echo $phone;
 echo "<br>";
 echo $gender;
 echo "<br>";
-echo $comment;
+echo $comment;*/
 ?>
 <form method="post">
-<input type="submit" name="button" class="button" value="Submit">  
+<input type="submit" name="button" class="button" value="Submit"/>  
 </form>
 
 </body>
