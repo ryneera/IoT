@@ -26,7 +26,8 @@ value="male">Male
 <?php
 
 echo "Hello.";
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$path = "C:/Users/laura/Desktop/tuke/file.txt"; 
+$myfile = fopen($path, "w");
 fwrite($myfile, $name);
 fclose($myfile);
 echo "<br>";
