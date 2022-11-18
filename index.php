@@ -21,13 +21,14 @@ value="female">Female
 <?php if (isset($gender) && $gender=="male") echo "checked";?>
 value="male">Male
 <br><br>
-<input type="submit" name="submit" value="Submit">  
 
 
 <?php
+
 echo "Hello.";
 $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
 fwrite($myfile, $name);
+fclose($myfile);
 echo "<br>";
 echo $email;
 echo "<br>";
@@ -39,6 +40,7 @@ echo $gender;
 echo "<br>";
 echo $comment;
 ?>
+<input type="submit" name=$myfile class="button" value="Submit">  
 
 </body>
 </html>
