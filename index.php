@@ -36,7 +36,7 @@ function button(){
 
 }
 
-echo "Hello.";
+echo "Hello. :)";
 echo "<br>";
 echo $email;
 echo "<br>";
