@@ -23,13 +23,18 @@ value="male">Male
 <br><br>
 
 
+
 <?php
 
+function button(){
+    $path = "C:/Users/laura/Desktop/tuke/file.txt"; 
+    $myfile = fopen($path, "w");
+    fwrite($myfile, "oki");
+    fclose($myfile);
+
+}
+
 echo "Hello.";
-$path = "C:/Users/laura/Desktop/tuke/file.txt"; 
-$myfile = fopen($path, "w");
-fwrite($myfile, $name);
-fclose($myfile);
 echo "<br>";
 echo $email;
 echo "<br>";
@@ -41,7 +46,7 @@ echo $gender;
 echo "<br>";
 echo $comment;
 ?>
-<input type="submit" name=$myfile class="button" value="Submit">  
+<input type="submit" name="button" class="button" value="Submit">  
 
 </body>
 </html>
