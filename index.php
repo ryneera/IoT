@@ -44,9 +44,13 @@ body{
     padding: 10px;
     font-size: 18px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-color: rgb(143, 110, 110);
+    border-color: rgb(183, 135, 148);
     background: rgb(213, 171, 182);
     cursor:pointer;
+}
+.button input:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 </style>
