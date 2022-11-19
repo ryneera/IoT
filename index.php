@@ -120,7 +120,7 @@ input:focus {
             </div>
             <div class="row">
                 <div class="button">
-                    <input type="submit" value="Save">
+                    <input type="submit" value="SUBMIT FORM">
                 </div>
             </div>
         </div>
