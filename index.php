@@ -7,13 +7,22 @@ body{
     font-family: sans-serif;
     background-image: url(bg.png);
     background-size: cover;
-  }
+}
+
+.box{
+align-items: center;
+padding: 20px;
+border: 10px solid gainsboro;
+background: gainsboro;
+
+}
 </style>
 
 <body>
 
     <form action="config.php">
-        <div class="input-box">
+        <div class="box">
+            <div class="input-box">
                 <label for="">Your name: </label>
                 <input type="text" name="name"  autocomplete="off" required>
             </div>
@@ -37,7 +46,8 @@ body{
                 <label for="">Gender: </label>
                 <input type="text" name="gender"  autocomplete="off" required>
             </div>
-        <input type="submit" value="Save">  
+            <input type="submit" value="Save">  
+        </div>
     </form>
 
 </body>
