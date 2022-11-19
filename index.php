@@ -25,36 +25,24 @@ value="male">Male
 
 
 <?php
- /*if(array_key_exists('button1', $_POST)) {
+if(array_key_exists('button1', $_POST)) {
     button();
 }
 function button(){
     echo "yopp";
-    /*
-    $path = "C:/Users/laura/Desktop/tuke/file.txt"; 
+    
+    $myfile = fopen("file.txt", "w");
+    fwrite($myfile, $_POST['name']);
+    fclose($myfile);
+    
     
 
-}*/
-
-$myfile = fopen("file.txt", "w");
-fwrite($myfile, $name);
-fclose($myfile);
+}
 
 
-echo "Hello. :)";
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $age;
-echo "<br>";
-echo $phone;
-echo "<br>";
-echo $gender;
-echo "<br>";
-echo $comment;
 ?>
 <form method="post">
-<input type="submit" name="button" class="button" value="Submit">  
+    <input type="submit" name="button" class="button" value="Submit">  
 </form>
 
 </body>
