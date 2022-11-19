@@ -24,7 +24,7 @@ body{
 
 .box{
     position: absolute;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -36,6 +36,11 @@ body{
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
+h2{
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
 .button input{
     display:block;
     margin: auto;
@@ -43,14 +48,19 @@ body{
     border-radius: 5px;
     padding: 10px;
     font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     border-color: rgb(183, 135, 148);
     background: rgb(213, 171, 182);
     cursor:pointer;
 }
+
 .button input:hover {
     transform: scale(1.2);
     transition: 0.5s;
+}
+
+input:focus {
+  background-color: rgb(209, 225, 246);
 }
 
 </style>
@@ -59,6 +69,7 @@ body{
 
     <form action="config.php">
         <div class="box">
+            <h2>Contact form</h2>
             <div class="row">
                 <div class="col">
                     <label for="">Your name: </label>
