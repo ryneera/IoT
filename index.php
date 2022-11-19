@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+<style media="screen">
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(bg.png);
+    background-size: cover;
+  }
+</style>
+
 <body>
 
     <form action="config.php">
