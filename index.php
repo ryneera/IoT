@@ -10,15 +10,39 @@ body{
 }
 
 .box{
-align-items: center;
-top: 50%;
-left: 50%;
-padding: 20px;
-margin: auto;
-width: 40%;
-border: 10px solid gainsboro;
-background: gainsboro;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: gainsboro;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
 
+.box .input-box{
+    position: relative;
+}
+
+.box .input-box input{
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.box input[type="submit"]{
+    display:block;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: beige;
+    cursor:pointer;
 }
 </style>
 
