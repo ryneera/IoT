@@ -11,6 +11,8 @@ body{
 
 .box{
 align-items: center;
+top: 50%;
+left: 50%;
 padding: 20px;
 border: 10px solid gainsboro;
 background: gainsboro;
