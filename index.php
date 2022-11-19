@@ -4,16 +4,21 @@
 
     <form action="config.php">
         <div class="input-box">
+                <label for="">Your name: </label>
                 <input type="text" name="name"  autocomplete="off" required>
-                <label for="">Username</label>
             </div>
             <div class="input-box">
+                <label for="">Your e-mail: </label>
                 <input type="email" name="email"  autocomplete="off" required>
-                <label for="">Email</label>
             </div>
             <div class="input-box">
-                <input type="password" name="age"  autocomplete="off" required>
-                <label for="">Age</label>
+                <label for="">Age: </label>
+                <input type="number" name="age"  autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <label for="">Phone: </label>
+                <input type="tel" name="phone"  autocomplete="off" required>
+            </div>
         <input type="submit" value="Save">  
     </form>
 
