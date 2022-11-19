@@ -1,64 +1,21 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-Name: <input type="text" name="name" value="<?php echo $name;?>">
-<br><br>
-E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-<br><br>
-Age: <input type="text" name="age" value="<?php echo $age;?>">
-<br><br>
-Phone: <input type="text" name="phone" value="<?php echo $phone;?>">
-<br><br>
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-<br><br>
-
-Gender:
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="female") echo "checked";?>
-value="female">Female
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="male") echo "checked";?>
-value="male">Male
-<br><br>
-
-
-
 <?php
-
-    /*
-    $path = "C:/Users/laura/Desktop/tuke/file.txt"; 
-    $myfile = fopen($path, "w");
-    fwrite($myfile, "oki");
-    fclose($myfile);*/
-
-
-/*
-echo "Hello. :)";
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $age;
-echo "<br>";
-echo $phone;
-echo "<br>";
-echo $gender;
-echo "<br>";
-echo $comment;*/
-?>
- <?php
-        if(array_key_exists('button1', $_POST)) {
-            button1();
-        }
-        function button1() {
-            echo "yopp";
-        }
+        
+        $sn1 = $_GET["a"];
+        $sn2 = $_GET["b"];
+        
+        $file1 = fopen("sensors.txt","w") or die("Unable to open file!");
+        $text1 = "a=" . $sn1 . " b=" . $sn2;
+        
+        fwrite($file1, $text1);
+        fclose($file1);
+        
+        $file2 = fopen("actuator.txt","w") or die("Unable to open file!");
+        $text2 = "Value from actuator. Save this value to actuator.txt";
+        fwrite($file2, $text2);
+        fclose($file2);
+        
+        $file3 = fopen("actuator.txt","r") or die ("Subor neexistuje");
+        $text3 = fread($file3,filesize("actuator.txt"));
+        echo $text3;
+        fclose($file3);
     ?>
-  
-    <form method="post">
-        <input type="submit" name="button1"
-                class="button" value="Button1" />
-
-    </form>
-</body>
-</html>
