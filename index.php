@@ -14,6 +14,8 @@ align-items: center;
 top: 50%;
 left: 50%;
 padding: 20px;
+margin: auto;
+width: 40%;
 border: 10px solid gainsboro;
 background: gainsboro;
 
